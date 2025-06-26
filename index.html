@@ -4,39 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="scrolling.css">
 </head>
-<body>
-    <nav>
-        <ul class="sidebar">
-            <li onclick=hideSidebar()><a href="#"><i class='bx bx-x' style='font-size: 26px;'></i></a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">product</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Forum</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
-        <ul>
-            <li><a href="#">ShopWeb</a></li>
-            <li class="hideOnMobile"><a href="#">Blog</a></li>
-            <li class="hideOnMobile"><a href="#">product</a></li>
-            <li class="hideOnMobile"><a href="#">About</a></li>
-            <li class="hideOnMobile"><a href="#">Forum</a></li>
-            <li class="hideOnMobile"><a href="#">Login</a></li>
-            <li class="menu" onclick= showSidebar()><a href="#"><i class='bx bx-menu' ></i></a></li>
-        </ul>
-    </nav>
+    <section class="one">
+        <h1>
+            <button class="yuna">Firts page</button></h1>
+    </section>
 
-    <script>
-        function showSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
-        function hideSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
-        }
-    </script>
+    <section class="two">
+        <h1>
+            <button class="yura">
+                Second page</button></h1>
+    </section>
+
+    <section class="three">
+        <h1>
+            <button class="mahiro">Third page</button>
+        </h1>
+    </section>
+
+    <section class="four">
+        <h1>
+            <button class="hina">
+            Web dev</button></h1>
+    </section>
+   </div>
 </body>
+<script src="scrolling.js"></script>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <section class="one">
+        <h1>
+            <button class="yuna">Firts page</button></h1>
+    </section>
+
+    <section class="two">
+        <h1>
+            <button class="yura">
+                Second page</button></h1>
+    </section>
+
+    <section class="three">
+        <h1>
+            <button class="mahiro">Third page</button>
+        </h1>
+    </section>
+
+    <section class="four">
+        <h1>
+            <button class="hina">
+            Web dev</button></h1>
+    </section>
+   </div>
+</body>
+<script src="scrolling.js"></script>
 </html>
