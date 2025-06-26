@@ -1,89 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
 *{
     margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    min-height: 100dvh;
-    background: url(daun.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-family: 'segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-nav{
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+.container .yuna {
+    transform: translatey(0);
+    transition-delay: 0s;
 }
 
-nav ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.container .yuna .active{
+    transform: translatey(-800px);
+    transition-delay: 0s;
 }
 
-nav li{
-    height: 50px;
+.container .yura {
+    transform: translatey(0);
+    transition-delay: 0s;
 }
 
-nav a{
-    height: 100%;
-    padding: 0 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: black;
+
+.container .yura .active{
+    transform: translatey(-800px);
+    transition-delay: 0s;
 }
 
-nav a:hover{
-    background: #f0f0f0;
+
+section {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
 }
 
-nav li:first-child{
-    margin-right: auto;
+h1{
+    color: white;
+    text-shadow: 1px 1px 4px #000;
 }
 
-.sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter:  blur(10px);
-    box-sizing: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+.one{
+    background-color: rgb(119, 119, 119)
 }
 
-.sidebar li{
-    width: 100%;
+.yuna{
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 45px;
+}
+.yuna:hover{
+    transform: scale(1.4);
+    transition: .3s ease;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+    0 0 10px rgb(0, 0, 0),
+    0 0 20px rgb(0, 0, 0),
+    0 0 40px rgb(0, 0, 0),
+    0 0 80px rgb(0, 0, 0),
+    0 0 160px rgb(0, 0, 0);;
 }
 
-.sidebar a{
-    width: 100%;
+
+
+.two{
+    background-color: rgb(38, 4, 61)
 }
 
-.menu{
- font-size: 26px;
- display: none;
+.yura{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 45px;
 }
 
-@media(max-width: 800px){
-    .hideOnMobile{
-        display: none;
-    }
-    .menu{
-        display: block;
-    }
+.yura:hover{
+    transform: scale(1.4);
+    transition: .3s ease;
+    color: rgb(255, 0, 0);
+    text-shadow: 
+    0 0 10px rgb(255, 0, 234),
+    0 0 20px rgb(255, 0, 234),
+    0 0 40px rgb(255, 0, 234),
+    0 0 80px rgb(255, 0, 234),
+    0 0 160px rgb(255, 0, 234);;
 }
-@media(max-width: 400px){
-    .sidebar{
-        width: 100%;
-    }
+
+.three{
+    background-color: rgb(214, 27, 167)
 }
+
+.mahiro{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 45px;
+}
+
+.mahiro:hover{
+    transform: scale(1.4);
+    transition: .3s ease;
+    color: rgb(131, 48, 73);
+    text-shadow: 
+    0 0 10px rgb(255, 0, 0),
+    0 0 20px rgb(255, 0, 0),
+    0 0 40px rgb(255, 0, 0),
+    0 0 80px rgb(255, 0, 0),
+    0 0 160px rgb(255, 0, 0);;
+}
+
+
+.four{
+    background-color: rgb(245, 68, 24)
+}
+.hina{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 45px;
+}
+.hina:hover{
+    transform: scale(1.4);
+    transition: .3s ease;
+    color: rgb(223, 238, 9);
+    text-shadow: 
+    0 0 10px rgb(5, 217, 255),
+    0 0 20px rgb(5, 217, 255),
+    0 0 40px rgb(5, 217, 255),
+    0 0 80px rgb(5, 217, 255),
+    0 0 160px rgb(5, 217, 255);;
+}
+
+
