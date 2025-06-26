@@ -1,198 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Project</title>
-  <link rel="stylesheet" href="styles.CSS">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Julius+Sans+One&family=Kaushan+Script&display=swap" rel="stylesheet">  
-  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Kaushan+Script&display=swap" rel="stylesheet">
-  
-  <style>
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-
-  <header class="header">
-    <a href="#" class="logo">SHOPWEB</a>
-
-    <nav class="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">Products</a>
-      <a href="#About Company">
-        About Company</a>
-      <a href="#About Owner">About Owner</a>
-  </nav>
-                <!-- UNTUK HREF NYA HARUS SAMA DENGAN ID YANG DI BAWAH AGAR BISA TERPANGGIL-->
-    
-</header>
-
-
-<section id="home" class="home">
-
-    <div class="content">
-    <div class="text-section">    
-      <h1>Welcome <span>To</span></h1>
-    <p class="isi">ShopWeb. Here we offer website creation</p> 
-      <p class="isi">services according to your wishes,</p> 
-        <p class="isi">starting from companies, sales, </p>
-          <p class="isi">and others.</p>
-          <p class="teks"><a>Are you interested? Come on, buy the service</a></p>
-  </div>
-  <div class="gambar1">
-    <img src="orang bekerja sama.png " alt="Tim bekerja">
-  </div>
-</div>
-</section>
-
-  <section id="about" class="about">
-    <div class="about-content">
-      <h2 class="judul">Our Products</h2>
-      <div class="gambar2">
-        <img class="ganti1" src="gambarweb1.png" alt="">
-        <img class="ganti" src="gambarweb2.png" alt="">
-        <img class="ganti2" src="gambarweb3.png" alt="">
-      </div>
-    </div>
-  </section>
-
-
-   
-
-  <!-- <section id="about" className="about">
-    <div className="about-content">
-      <h2 className="judul">Our Products</h2>
-      <div className="gambar2">
-        <div className="card">
-          <img className="ganti1" src={gambar1} alt="" />
-          <div className="caption">Green Nest - Produk alami & ramah lingkungan</div>
-        </div>
-        <div className="card">
-          <img className="ganti" src={gambar2} alt="" />
-          <div className="caption">Flight Website - Temukan tujuan impianmu</div>
-        </div>
-        <div className="card">
-          <img className="ganti2" src={gambar3} alt="" />
-          <div className="caption">Creative Agency - Animasi & Ilustrasi</div>
-        </div>
-        <div className="card">
-          <img className="ganti4" src={gambar4} alt="" />
-          <div className="caption">Climate Campaign - Selamatkan Bumi bersama</div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <section id="About Company" class="about-company">
-    <div class="company-profile">
-      <div class="judul">
-        <a>Company Profile</a>
-      </div>
-      <div class="isi">
-        <p>ShopWeb is a company engaged in technology. We</p>
-        <p>focus on website creation services according to your</p>
-        <p>wishes so that you can get maximum results from us.</p>
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Visi -->
-      <div class="visi-box" onclick="toggleVisi(this)">
-        <div class="visi-title">Visi</div>
-        <div class="visi-desc">
-          Menjadi perusahaan terbaik di dunia dengan pelayanan unggul dan inovasi berkelanjutan.
-        </div>
-      </div>
-  
-      <!-- Misi -->
-      <div class="misi-box" onclick="toggleVisi(this)">
-        <div class="misi-title">Misi</div>
-        <div class="misi-desc">
-          <ul>
-            <li>Providing high-quality website creation services tailored to the needs and business goals of clients.</li>
-            <li>Prioritizing customer satisfaction by providing modern, functional, and responsive design solutions.</li>
-            <li>Continuously innovating in web technology to ensure that the websites we create always follow evolving market trends and needs.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="About Owner" >
-    <div class="About-owner">
-      <div class="kotak">   
-      <div class="profile">
-        Profile Owner
-      </div>
-    <div class="owner">
-    <img src="owner.jpg" alt=""/>
-      </div>
-      <div class='bawahfoto'>
-        <div class='nama'>
-          Kang yuna</div>
-          <div class='shop'>
-            SHOPWEB
-          </div>
-      </div>
-      <div class='tentang'>
-        <div class='biru'>Achievements</div>
-        <div class='hitam1'>Award recipient for outstanding team performance and service</div>
-        <div class='biru'>The beginning of ShopWeb</div>
-        <div class='hitam2'>
-          <p>ShopWeb began as a small project with friends. Under</p>
-          <p>Kang Yuna's leadership,the service evolved rapidly,</p>
-          <p>known as ShopWeb, and has since recruited a</p>
-          <p>professional team to support business</p>
-          <p>growth digitally.</p>
-        </div>
-        <div class='biru'>Personal vision</div>
-        <div class='hitam3'>
-          <p>Building innovative technologies to help</p>
-          <p>businesses grow and succeed</p>
-         </div>
-      </div>
-      </div>
-
-    </div>
-  </section>
-  
-  <div class='footer'>
-    <div class='pertama'>
-    <div class='web'>SHOPWEB</div>
-    <div class='copyright'>
-      <p>©2025 SHOPWEB</p>
-      <p>All rights reserved.</p>
-    </div>
-    </div>
-    <div class='kedua'>
-      <div class='contact-us'>Contact Us</div>
-      <div class='alamat'>
-        <p>JL. Stadion, Mario,</p>
-        <p>Kec. Mariso, Kota Makassar</p>
-      </div>
-    </div>
-    <div class='ketiga'>
-      <div class='follow-us'>
-        <a>Follow Us</a></div>
-        <div class='ig'>
-          <ul>
-          <li><a href='https://www.instagram.com/sxionryy/?next=%2F' target="_blank"><i class='bx bxl-instagram'></i>Instagram</a></p></li>
-        <li><a  href='https://www.tiktok.com/@i_am_here_mahiro' target="_blan"><i class='bx bxl-tiktok'></i>Tiktok</a></li>
-        <li><a  href='https://www.youtube.com/' target="_blank"><i class='bx bxl-youtube' ></i>Youtube</a></li>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class='bx bx-x' style='font-size: 26px;'></i></a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">product</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Login</a></li>
         </ul>
-          </div>
-      
-    </div>
-  </div>
-  
+        <ul>
+            <li><a href="#">ShopWeb</a></li>
+            <li class="hideOnMobile"><a href="#">Blog</a></li>
+            <li class="hideOnMobile"><a href="#">product</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">Forum</a></li>
+            <li class="hideOnMobile"><a href="#">Login</a></li>
+            <li class="menu" onclick= showSidebar()><a href="#"><i class='bx bx-menu' ></i></a></li>
+        </ul>
+    </nav>
+
     <script>
-      function toggleVisi(el) {
-        el.classList.toggle('open');
-      }
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
     </script>
-  
 </body>
 </html>
-    
