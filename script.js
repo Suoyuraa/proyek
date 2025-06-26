@@ -1,11 +1,17 @@
-const container = document.querySelector('.container');
-const yuna = document.querySelector('.yuna');
-const yura = document.querySelector('.yura');
+let sections = document.querySelectorAll('section');
 
-yuna.onclick = () => {
-    container.classList.add('active');
-};
-
-yura.onclick = () => {
-    wrapper.classList.remove('active');
-};
+window.onscroll = () => {
+    sections.forEach(sec =>{
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        
+        if (top >= offset && top <offset + height){
+            sec.classList.add('show-animate')
+        }
+        // if want to use repeating animation on scroll, use this
+        else {
+            sec.classList.remove('show-animate')
+        }
+    })
+}
